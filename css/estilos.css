@@ -1,0 +1,691 @@
+/*============================================
+globales
+============================================*/
+@import url("./globales.css");
+/*============================================
+Media queries
+============================================*/
+/*============================================
+mixin para los input y select
+============================================*/
+/*============================================
+Navegacion
+============================================*/
+.menu {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.icono {
+  width: 20%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.icono img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .icono img {
+    margin-left: 10px;
+  }
+}
+
+.items {
+  width: 60%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.items ul a {
+  text-decoration: none;
+  font-size: .875rem;
+  font-family: 'Lato';
+  font-weight: 700;
+  color: #333333;
+  margin-right: 2.87rem;
+}
+
+@media screen and (max-width: 767px) {
+  .items {
+    display: none;
+  }
+}
+
+.menMov {
+  width: 20%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #cc2e31;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .menMov {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*============================================
+informacion
+============================================*/
+.informacion {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(-21deg, #ff0000 35%, blue 35%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.875rem;
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion {
+    margin-bottom: 5rem;
+  }
+}
+
+.informacion .textos {
+  text-align: center;
+}
+
+.informacion .textos p {
+  color: #fff;
+  font-size: .875rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.informacion .textos h3 {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2rem;
+  font-family: 700;
+  text-transform: uppercase;
+  margin-bottom: .755rem;
+}
+
+.informacion .textos h3::after, .informacion .textos h3::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: currentColor;
+  top: .7em;
+}
+
+.informacion .textos h3::after {
+  left: -100px;
+}
+
+.informacion .textos h3::before {
+  right: -100px;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .textos h3 {
+    font-size: .7rem;
+  }
+  .informacion .textos h3::after, .informacion .textos h3::before {
+    content: none;
+  }
+}
+
+.informacion .textos h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-family: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .textos h1 {
+    font-size: 3rem;
+  }
+}
+
+.informacion .cotizador {
+  width: 65%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  /*============================================
+        Forma de pago 
+        ============================================*/
+  /*============================================
+        Comentarios
+        ============================================*/
+  /*============================================
+        Footer
+        ============================================*/
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador {
+    width: 100%;
+  }
+}
+
+.informacion .cotizador .auto {
+  width: 70%;
+  height: 70%;
+  margin-top: -7rem;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .auto {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.informacion .cotizador .formulario {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*============================================
+            Datos Personales
+            ============================================*/
+}
+
+.informacion .cotizador .formulario .datosAuto,
+.informacion .cotizador .formulario .datosPersonales,
+.informacion .cotizador .formulario .formaPago,
+.informacion .cotizador .formulario .comentarios,
+.informacion .cotizador .formulario .footer {
+  width: 97%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .formulario .datosAuto,
+  .informacion .cotizador .formulario .datosPersonales,
+  .informacion .cotizador .formulario .formaPago,
+  .informacion .cotizador .formulario .comentarios,
+  .informacion .cotizador .formulario .footer {
+    width: 95%;
+    height: auto;
+    margin-top: -30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.informacion .cotizador .formulario .col1,
+.informacion .cotizador .formulario .col2 {
+  width: 48%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .formulario .col1,
+  .informacion .cotizador .formulario .col2 {
+    width: 100%;
+  }
+}
+
+.informacion .cotizador .formulario .col1 label,
+.informacion .cotizador .formulario .col2 label {
+  margin: .6rem .5rem;
+  color: #8a8888;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.informacion .cotizador .formulario .col1 select,
+.informacion .cotizador .formulario .col2 select {
+  padding: .55rem 0 .55rem 0.625rem;
+  margin-bottom: 30px;
+  border: 1px solid #ff0000;
+  font-size: .875rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.informacion .cotizador .formulario .col1 input,
+.informacion .cotizador .formulario .col2 input {
+  padding: .55rem 0 .55rem 0.625rem;
+  margin-bottom: 30px;
+  border: 1px solid #ff0000;
+  font-size: .875rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.informacion .cotizador .formulario .colu1,
+.informacion .cotizador .formulario .colu2,
+.informacion .cotizador .formulario .colu3 {
+  width: 31.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .formulario .colu1,
+  .informacion .cotizador .formulario .colu2,
+  .informacion .cotizador .formulario .colu3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.informacion .cotizador .formulario .colu1 label,
+.informacion .cotizador .formulario .colu2 label,
+.informacion .cotizador .formulario .colu3 label {
+  margin: .6rem .5rem;
+  color: #8a8888;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.informacion .cotizador .formulario .colu1 input,
+.informacion .cotizador .formulario .colu2 input,
+.informacion .cotizador .formulario .colu3 input {
+  padding: .55rem 0 .55rem 0.625rem;
+  margin-bottom: 30px;
+  border: 1px solid #ff0000;
+  font-size: .875rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.informacion .cotizador h1 {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2rem;
+  font-family: 700;
+  text-transform: uppercase;
+  margin-bottom: .755rem;
+  color: #ff0000;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0;
+  margin-top: 5rem;
+}
+
+.informacion .cotizador h1::after, .informacion .cotizador h1::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: currentColor;
+  top: .7em;
+}
+
+.informacion .cotizador h1::after {
+  left: -100px;
+}
+
+.informacion .cotizador h1::before {
+  right: -100px;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador h1 {
+    font-size: .7rem;
+  }
+  .informacion .cotizador h1::after, .informacion .cotizador h1::before {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador h1 {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+}
+
+.informacion .cotizador p {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador p {
+    text-align: center;
+    font-size: .7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.informacion .cotizador .txtContacto {
+  width: 97%;
+  margin: 3rem 0 .5rem .8rem;
+}
+
+.informacion .cotizador .txtContacto h4 {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.informacion .cotizador .btnContacto {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .btnContacto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.informacion .cotizador .btnContacto a {
+  border: 1px solid #ff0000;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .btnContacto a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.informacion .cotizador .btnContacto a i {
+  margin-top: 3px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .btnContacto a i {
+    margin-right: 0;
+  }
+}
+
+.informacion .cotizador .active {
+  background: #ff0000;
+  color: #fff !important;
+}
+
+.informacion .cotizador .colPago {
+  width: 90%;
+  border: 1px solid black;
+}
+
+.informacion .cotizador .colPago a {
+  width: 100%;
+}
+
+.informacion .cotizador .colComentarios {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.informacion .cotizador .colComentarios label {
+  margin: .6rem .5rem;
+  color: #8a8888;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.informacion .cotizador .colComentarios input {
+  padding: .55rem 0 .55rem 0.625rem;
+  margin-bottom: 30px;
+  border: 1px solid #ff0000;
+  font-size: .875rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+  padding: .55rem 0 8rem 0.625rem;
+}
+
+.informacion .cotizador .colFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .colFooter {
+    height: 250px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.informacion .cotizador .colFooter .aviso {
+  width: 60%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .colFooter .aviso {
+    width: 100%;
+  }
+}
+
+.informacion .cotizador .colFooter .aviso label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.informacion .cotizador .colFooter .aviso label span {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.informacion .cotizador .colFooter .aviso .check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #959595;
+  border-radius: 0;
+  margin: 20px 10px 20px 0;
+}
+
+.informacion .cotizador .colFooter .btnEnviar {
+  width: 40%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion .cotizador .colFooter .btnEnviar {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5rem;
+  }
+}
+
+.informacion .cotizador .colFooter .btnEnviar button {
+  width: 50%;
+  padding: 20px 0;
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid red;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=estilos.css.map */
