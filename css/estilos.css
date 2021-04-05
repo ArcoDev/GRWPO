@@ -239,6 +239,7 @@ Navegacion
           align-items: center;
   color: #cc2e31;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 47.938rem) {
@@ -247,6 +248,10 @@ Navegacion
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.mostrar {
+  height: 100vh;
 }
 
 /*============================================

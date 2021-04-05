@@ -278,12 +278,16 @@ Navegacion
     align-items: center;
     color: #cc2e31;
     font-size: 1.4rem;
-
+    cursor: pointer;
     @media screen and (max-width: $movil) {
         & {
             justify-content: center;
         }
     }
+}
+
+.mostrar {
+    height: 100vh;
 }
 
 /*============================================
