@@ -38,6 +38,14 @@ Navegacion
   }
 }
 
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .icono {
   width: 20%;
   height: inherit;
@@ -96,6 +104,12 @@ Navegacion
 }
 
 @media screen and (max-width: 767px) {
+  .items {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
   .items {
     display: none;
   }
@@ -196,6 +210,12 @@ informacion
   }
 }
 
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .textos h3 {
+    font-size: 1rem;
+  }
+}
+
 .informacion .textos h1 {
   font-size: 5.5rem;
   color: #fff;
@@ -243,6 +263,12 @@ informacion
 @media screen and (max-width: 767px) {
   .informacion .cotizador {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .cotizador {
+    width: 95%;
   }
 }
 
@@ -453,10 +479,22 @@ informacion
   }
 }
 
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .cotizador h1 {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .informacion .cotizador h1 {
     margin-top: 3.3rem;
     font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .cotizador h1 {
+    font-size: 2.2rem;
   }
 }
 
@@ -564,6 +602,12 @@ informacion
 }
 
 @media screen and (max-width: 767px) {
+  .informacion .cotizador .colPago {
+    width: 97%;
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
   .informacion .cotizador .colPago {
     width: 97%;
   }
@@ -724,6 +768,12 @@ informacion
   }
 }
 
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .cotizador .colFooter .aviso {
+    width: 50%;
+  }
+}
+
 .informacion .cotizador .colFooter .aviso label {
   font-size: 16px;
   font-weight: 500;
@@ -782,6 +832,12 @@ informacion
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1023px) {
+  .informacion .cotizador .colFooter .btnEnviar {
+    width: 50%;
   }
 }
 
