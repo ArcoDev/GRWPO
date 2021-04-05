@@ -1,7 +1,120 @@
 /*============================================
 globales
 ============================================*/
-@import url("./globales.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato";
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*============================================
+fuentes
+============================================*/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "PlayFair-Italic";
+  src: url(../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+/*============================================
+  color al placeholder
+  ============================================*/
+::-webkit-input-placeholder {
+  color: #000;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+}
+
+:-ms-input-placeholder {
+  color: #000;
+}
+
 /*============================================
 Media queries
 ============================================*/
@@ -13,7 +126,7 @@ Navegacion
 ============================================*/
 .menu {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,11 +139,11 @@ Navegacion
   background: #fff;
   position: fixed;
   z-index: 100;
-  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 0.625rem 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 0.625rem 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .menu {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -38,7 +151,7 @@ Navegacion
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .menu {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -61,15 +174,15 @@ Navegacion
 }
 
 .icono img {
-  width: 100px;
-  height: 100px;
+  width: 5.25rem;
+  height: 5.25rem;
   position: absolute;
-  margin-top: 10px;
+  margin-top: .725rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .icono img {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 }
 
@@ -103,13 +216,13 @@ Navegacion
   margin-right: 2.87rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .items {
     display: none;
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .items {
     display: none;
   }
@@ -128,7 +241,7 @@ Navegacion
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .menMov {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -142,7 +255,7 @@ informacion
 .informacion {
   width: 100%;
   height: auto;
-  background: linear-gradient(-21deg, #ff0000 50%, blue 50%);
+  background: linear-gradient(-21deg, #ff0000 50%, #4957d1 50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,12 +277,18 @@ informacion
   text-align: center;
 }
 
+@media screen and (max-width: 47.938rem) {
+  .informacion .textos {
+    margin-bottom: 1.3rem;
+  }
+}
+
 .informacion .textos p {
   color: #fff;
   font-size: .875rem;
   margin-bottom: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: .188rem;
 }
 
 .informacion .textos h3 {
@@ -187,21 +306,21 @@ informacion
 .informacion .textos h3::after, .informacion .textos h3::before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 3px;
+  width: 5rem;
+  height: .188rem;
   background: currentColor;
   top: .7em;
 }
 
 .informacion .textos h3::after {
-  left: -100px;
+  left: -6.25rem;
 }
 
 .informacion .textos h3::before {
-  right: -100px;
+  right: -6.25rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .textos h3 {
     font-size: .7rem;
   }
@@ -210,22 +329,22 @@ informacion
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .textos h3 {
     font-size: 1rem;
   }
 }
 
 .informacion .textos h1 {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: "PlayFair-Italic";
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188rem;
   font-family: 700;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .textos h1 {
     font-size: 3rem;
   }
@@ -247,8 +366,8 @@ informacion
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
-  padding-bottom: 80px;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
   /*============================================
         Forma de pago 
         ============================================*/
@@ -260,13 +379,13 @@ informacion
         ============================================*/
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador {
     width: 95%;
   }
@@ -275,10 +394,10 @@ informacion
 .informacion .cotizador .auto {
   width: 70%;
   height: 70%;
-  margin-top: -7rem;
+  margin-top: -9rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .auto {
     width: 100%;
     height: 100%;
@@ -311,7 +430,7 @@ informacion
 .informacion .cotizador .formulario .comentarios,
 .informacion .cotizador .formulario .footer {
   width: 97%;
-  height: 200px;
+  height: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +438,7 @@ informacion
       justify-content: space-around;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .formulario .datosAuto,
   .informacion .cotizador .formulario .datosPersonales,
   .informacion .cotizador .formulario .formaPago,
@@ -327,7 +446,7 @@ informacion
   .informacion .cotizador .formulario .footer {
     width: 95%;
     height: auto;
-    margin-top: -30px;
+    margin-top: -1.875rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -336,7 +455,7 @@ informacion
 .informacion .cotizador .formulario .col1,
 .informacion .cotizador .formulario .col2 {
   width: 48%;
-  height: 200px;
+  height: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +465,7 @@ informacion
           flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .formulario .col1,
   .informacion .cotizador .formulario .col2 {
     width: 100%;
@@ -358,17 +477,17 @@ informacion
   margin: .6rem .5rem;
   color: #8a8888;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
 }
 
 .informacion .cotizador .formulario .col1 select,
 .informacion .cotizador .formulario .col2 select {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
@@ -377,11 +496,11 @@ informacion
 .informacion .cotizador .formulario .col1 input,
 .informacion .cotizador .formulario .col2 input {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
@@ -403,7 +522,7 @@ informacion
           justify-content: flex-start;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .formulario .colu1,
   .informacion .cotizador .formulario .colu2,
   .informacion .cotizador .formulario .colu3 {
@@ -419,18 +538,18 @@ informacion
   margin: .6rem .5rem;
   color: #8a8888;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
 }
 
 .informacion .cotizador .formulario .colu1 input,
 .informacion .cotizador .formulario .colu2 input,
 .informacion .cotizador .formulario .colu3 input {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
@@ -448,7 +567,7 @@ informacion
   margin-bottom: .755rem;
   color: #ff0000;
   font-size: 3rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "PlayFair-Italic";
   margin-bottom: 0;
   margin-top: 5rem;
 }
@@ -456,21 +575,21 @@ informacion
 .informacion .cotizador h1::after, .informacion .cotizador h1::before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 3px;
+  width: 5rem;
+  height: .188rem;
   background: currentColor;
   top: .7em;
 }
 
 .informacion .cotizador h1::after {
-  left: -100px;
+  left: -6.25rem;
 }
 
 .informacion .cotizador h1::before {
-  right: -100px;
+  right: -6.25rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador h1 {
     font-size: .7rem;
   }
@@ -479,20 +598,20 @@ informacion
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador h1 {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador h1 {
     margin-top: 3.3rem;
     font-size: 1.7rem;
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador h1 {
     font-size: 2.2rem;
   }
@@ -502,12 +621,12 @@ informacion
   font-size: 1rem;
   color: #000;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: .313rem;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador p {
     text-align: center;
     font-size: .7rem;
@@ -521,10 +640,10 @@ informacion
 
 .informacion .cotizador .txtContacto h4 {
   color: #666666;
-  font-size: 12px;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: .188rem;
 }
 
 .informacion .cotizador .btnContacto {
@@ -540,7 +659,7 @@ informacion
           justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .btnContacto {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -551,7 +670,7 @@ informacion
 .informacion .cotizador .btnContacto a {
   border: 1px solid #ff0000;
   width: 100%;
-  height: 40px;
+  height: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +685,7 @@ informacion
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .btnContacto a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -576,11 +695,11 @@ informacion
 }
 
 .informacion .cotizador .btnContacto a i {
-  margin-top: 3px;
-  margin-right: 40px;
+  margin-top: .188rem;
+  margin-right: 2.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .btnContacto a i {
     margin-right: 0;
   }
@@ -593,7 +712,7 @@ informacion
 
 .informacion .cotizador .colPago {
   width: 75%;
-  padding-top: 15px;
+  padding-top: 1.313rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,13 +720,13 @@ informacion
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colPago {
     width: 97%;
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador .colPago {
     width: 97%;
   }
@@ -616,7 +735,7 @@ informacion
 .informacion .cotizador .colPago a {
   width: 50%;
   height: 25%;
-  border: 1px solid red;
+  border: 1px solid #ff0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,9 +752,9 @@ informacion
   font-weight: 700;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colPago a {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 
@@ -651,7 +770,7 @@ informacion
           flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colPago .input,
   .informacion .cotizador .colPago .select {
     width: 100%;
@@ -662,25 +781,25 @@ informacion
 
 .informacion .cotizador .colPago .input label,
 .informacion .cotizador .colPago .select label {
-  margin: 10px;
+  margin: .625rem;
 }
 
 .informacion .cotizador .colPago .input input,
 .informacion .cotizador .colPago .select input {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
   padding: .55rem 0 .65rem 0.625rem;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colPago .input input,
   .informacion .cotizador .colPago .select input {
     margin-right: 0;
@@ -690,11 +809,11 @@ informacion
 .informacion .cotizador .colPago .input select,
 .informacion .cotizador .colPago .select select {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
@@ -713,19 +832,19 @@ informacion
 
 .informacion .cotizador .colComentarios label {
   margin: .6rem .5rem;
-  color: #8a8888;
+  color: #989898;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
   text-transform: uppercase;
 }
 
 .informacion .cotizador .colComentarios input {
   padding: .55rem 0 .55rem 0.625rem;
-  margin-bottom: 30px;
+  margin-bottom: 1.87 0.313rem;
   border: 1px solid #ff0000;
   font-size: .875rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .188px;
   color: #000;
   text-transform: uppercase;
   background: transparent;
@@ -739,9 +858,9 @@ informacion
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colFooter {
-    height: 250px;
+    height: 23.125rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -749,7 +868,7 @@ informacion
 
 .informacion .cotizador .colFooter .aviso {
   width: 60%;
-  height: 200px;
+  height: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,20 +881,20 @@ informacion
           justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colFooter .aviso {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador .colFooter .aviso {
     width: 50%;
   }
 }
 
 .informacion .cotizador .colFooter .aviso label {
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
@@ -785,11 +904,11 @@ informacion
 }
 
 .informacion .cotizador .colFooter .aviso .check {
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
   border: 1px solid #959595;
   border-radius: 0px;
-  margin: 20px 10px 20px 0;
+  margin: 1.25rem .625rem 1.25rem 0;
 }
 
 .informacion .cotizador .colFooter .aviso .check::before {
@@ -797,11 +916,11 @@ informacion
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 3px;
-  width: 23px;
-  height: 23px;
+  top: .188rem;
+  width: 2.188rem;
+  height: 2.188rem;
   border: 1px solid #c5c5c5;
-  margin-right: 15px;
+  margin-right: 1.313rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
@@ -809,7 +928,7 @@ informacion
 
 .informacion .cotizador .colFooter .btnEnviar {
   width: 40%;
-  height: 200px;
+  height: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,7 +944,7 @@ informacion
           justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.938rem) {
   .informacion .cotizador .colFooter .btnEnviar {
     width: 100%;
     -webkit-box-align: center;
@@ -835,7 +954,7 @@ informacion
   }
 }
 
-@media screen and (min-width: 758px) and (max-width: 1023px) {
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
   .informacion .cotizador .colFooter .btnEnviar {
     width: 50%;
   }
@@ -843,15 +962,15 @@ informacion
 
 .informacion .cotizador .colFooter .btnEnviar button {
   width: 50%;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   background: transparent;
   border-radius: 0;
-  border: 1px solid red;
-  font-size: 16px;
+  border: 1px solid #ff0000;
+  font-size: 0.875rem;
   color: #000;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: .313rem;
   cursor: pointer;
 }
 /*# sourceMappingURL=estilos.css.map */
